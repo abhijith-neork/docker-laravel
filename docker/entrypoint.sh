@@ -2,7 +2,6 @@
 
 if [ ! -f "vendor/autoload.php" ]; then
     composer install --no-progress --no-interaction
-    composer install --ignore-platform-req=ext-gd
 fi
 
 if [ ! -f ".env" ]; then
